@@ -22,5 +22,5 @@ Las pruebas pueden ejecutarse utilizando Maven desde la línea de comandos.
 
 Para ejecutar un runner específico (por ejemplo, `TextBoxDemoQARunner`), utiliza el siguiente comando:
 
-mvn test -Dtest=SubmitFormDemoQARunner
+mvn test -Dtest=TextBoxDemoQARunner
 
