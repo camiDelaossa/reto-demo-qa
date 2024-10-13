@@ -16,11 +16,17 @@ Este proyecto de pruebas automatizadas utilizando Cucumber y Serenity para proba
 
 ## Cómo Ejecutar las Pruebas
 
-Las pruebas pueden ejecutarse utilizando Maven desde la línea de comandos.
+Las pruebas pueden ejecutarse utilizando Maven desde la línea de comandos en la raiz del proyecto.
 
 ### Ejecutar un Runner Específico
 
 Para ejecutar un runner específico (por ejemplo, `TextBoxDemoQARunner`), utiliza el siguiente comando:
 
 mvn test -Dtest=TextBoxDemoQARunner
+
+### Ejecutar Todas las Pruebas de los Test Runners
+
+Para ejecutar todas las pruebas configuradas en los test runners, utiliza el siguiente comando:
+
+mvn test -Dtest=*Runner
 
