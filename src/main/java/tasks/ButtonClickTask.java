@@ -18,9 +18,9 @@ public class ButtonClickTask implements Task {
   public <T extends Actor> void performAs(T actor) {
 
     actor.attemptsTo(
+        Scroll.to(ButtonUI.BTN_CLICK_ME_BUTTON),
         DoubleClick.on(ButtonUI.BTN_DOUBLE_CLICK_BUTTON),
         RightClickAction.on(ButtonUI.BTN_RIGHT_CLICK_BUTTON),
-        Scroll.to(ButtonUI.BTN_CLICK_ME_BUTTON),
         Click.on(ButtonUI.BTN_CLICK_ME_BUTTON)
     );
   }
