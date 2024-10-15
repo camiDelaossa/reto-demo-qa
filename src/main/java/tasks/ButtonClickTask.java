@@ -8,6 +8,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.DoubleClick;
 
+import net.serenitybdd.screenplay.actions.Scroll;
 import userInterface.ButtonUI;
 
 
@@ -19,6 +20,7 @@ public class ButtonClickTask implements Task {
     actor.attemptsTo(
         DoubleClick.on(ButtonUI.BTN_DOUBLE_CLICK_BUTTON),
         RightClickAction.on(ButtonUI.BTN_RIGHT_CLICK_BUTTON),
+        Scroll.to(ButtonUI.BTN_CLICK_ME_BUTTON),
         Click.on(ButtonUI.BTN_CLICK_ME_BUTTON)
     );
   }
