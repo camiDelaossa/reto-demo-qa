@@ -7,16 +7,16 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import userInterface.ModalDialogUI;
 
-public class InteractionModalDialogTask implements Task {
+public class InteractionSmallModalDialogTask implements Task {
 
   @Override
   public <T extends Actor> void performAs(T actor) {
     actor.attemptsTo(
-        Click.on(ModalDialogUI.BTN_SMALL_BUTTON)
+        Click.on(ModalDialogUI.BTN_SMALL_MODAL)
     );
 
   }
-  public static Performable interactionModalDialog() {
-    return Instrumented.instanceOf(InteractionModalDialogTask.class).withProperties();
+  public static Performable interactionSmallModalDialog() {
+    return Instrumented.instanceOf(InteractionSmallModalDialogTask.class).withProperties();
   }
 }
